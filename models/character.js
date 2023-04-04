@@ -8,7 +8,7 @@ const characterSchema = new mongoose.Schema({
   role: {
     type: String,
     required: true,
-    enum: ["Contrôleur", "Sentinelle", "Dueliste", "Initiateur"],
+    enum: ["Contrôleur", "Sentinelle", "Duelliste", "Initiateur"],
   },
   skills: { type: Array, default: undefined, required: false, ref: "skills" },
 });
