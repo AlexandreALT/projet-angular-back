@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 
 app.use("/", indexRouter);
-app.use("/characters", charactersRouter);
-app.use("/skills", skillsRouter);
+app.use("/characters", cors(), charactersRouter);
+app.use("/skills", cors(), skillsRouter);
 
 module.exports = app;
